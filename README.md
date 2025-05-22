@@ -1,5 +1,5 @@
 <img src="image.png"   alt="Texte alternatif" width="100" height="100">
-<div style="margin : 2rem; float:right; font-weight:bold" >THIAM Papa & HAJJI Chaimae & Saminou Nadira</div>
+<div style="margin : 2rem; float:right; font-weight:bold" >THIAM Papa</div>
 <div style="margin : 2rem; font-size:1.5rem; text-align:center">L3 Informatique</div>
 
 # Projet Dev Smartphone  - Jibou
