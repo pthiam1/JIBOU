@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    tools:context=".Jibou_Inscription">
+
+
+    <!-- Flèche de retour -->
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="41dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_margin="20dp"
+        android:contentDescription="Back"
+        android:src="@drawable/arrow"
+        android:tint="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+        <!-- Titre de l'activité -->
+        <TextView
+            android:id="@+id/inscription_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="S'inscrire"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <!-- Contenu du formulaire -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inscription_title"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- Champ Prénom -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#B9B8F9"
+          android:hint="Entrer votre prénom">
+
+            <EditText
+                android:id="@+id/register_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:searchResultHighlightColor="@color/white"
+                android:inputType="text"
+                android:textColor="@android:color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Champ Nom -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer votre nom"
+            android:textColorHint="#B9B8F9">
+
+            <EditText
+                android:id="@+id/register_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:searchResultHighlightColor="@color/white"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Champ E-mail -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#B9B8F9">
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:searchResultHighlightColor="@color/white"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Champ Mot de passe -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#B9B8F9"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:searchResultHighlightColor="@color/white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Conditions d'utilisation -->
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="En cliquant sur S'inscrire, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité."
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- Bouton S'inscrire -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/register_button"
+            android:text="S'inscrire"
+            android:textColor="@android:color/black" />
+        <!-- inscription via google-->
+            <!-- Google Sign-In Button -->
+<!--            <com.google.android.gms.common.SignInButton-->
+<!--                android:id="@+id/google_sign_in_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:visibility="visible" />-->
+
+            <!-- Bouton Continuer avec Google -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/google_sign_in_button"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:maxWidth="30dp"
+                android:maxHeight="30dp"
+                android:src="@drawable/google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuer avec Google"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Lien "Se connecter" -->
+        <LinearLayout
+            android:id="@+id/login_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vous avez déjà un compte ? "
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/connect_link_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se connecter"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

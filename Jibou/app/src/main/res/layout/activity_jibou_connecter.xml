@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".Jibou_connection">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="41dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_margin="20dp"
+        android:contentDescription="Back"
+        android:src="@drawable/arrow"
+        android:tint="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Se connecter"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Emai *"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:hint="Entrer votre mail"
+        android:textColorHint="#B9B8F9">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mail_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/mot_de_passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Mot de passe *"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:hint="Entrer votre mot de passe"
+        android:textColorHint="#B9B8F9"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/custom_eye">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mot_de_passe_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/se_souvenir_de_moi"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="Se souvenir de moi"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mot_de_passe_oublie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe oublié?"
+            android:textColorHint="@color/white"
+            android:textColorHighlight="@color/navy_blue"
+            android:textColor="@color/sky_blue"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/connexion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Se connecter"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

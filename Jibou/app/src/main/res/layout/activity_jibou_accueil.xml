@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/accuei_bg"
+    tools:context=".Jibou_Accueil">
+
+    <ImageView
+        android:id="@+id/logo_jibou"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_margin="75dp"
+        android:contentDescription="Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logobg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Vos courses sans casse-tête"
+        android:textColor="@android:color/white"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+        android:text="Jibou vous aide à faire vos courses en toute simplicité\n
+Finis les oublis, les pertes de temps et les erreurs. Finis le bout de papier sur le chariot."
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/connexion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Se connecter"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/inscription_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="S'inscrire"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
+
+    <!--    text en pied    -->
+    <TextView
+        android:id="@+id/comment_ca_marche"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Comment ça marche ?"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+</LinearLayout>

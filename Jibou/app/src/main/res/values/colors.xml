@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="dark_blue">#FF000080</color>
+    <color name="navy_blue">#FF000080</color>
+    <color name="sky_blue">#FF87CEEB</color>
+    <color name="light_blue">#FFADD8E6</color>
+<!--    bottom_nav_color-->
+    <color name="bottom_nav_color">#FF000000</color>
+    <color name="bottom_nav_color_selected">#FF000080</color>
+</resources>
